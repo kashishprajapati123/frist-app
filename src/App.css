@@ -1,38 +1,54 @@
-.App {
+
+body{
+  padding-top: 100px;
+}
+.App{
+  display: flex;
+flex-direction: column;
+  /* justify-content: center; */
   text-align: center;
+  width: 350px;
+  height: 100%;
+  margin: auto;
+  border: 1px solid rgb(178, 176, 176);
+  border-radius: 20px;
+  padding-bottom: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img{
+  margin:30px 0px;
+  height: 100px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputfield{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.inputfield input{
+ width: 300px;
+ height: 35px;
+margin-bottom: 10px;
+border-radius: 3px;
+border: 1px solid rgb(178, 176, 176);
+padding-left: 15px;
+outline: none;
+}
+.sign-in{
+  width: 320px;
+  height: 37px;
+ margin-bottom: 10px;
+ border-radius: 3px;
+background-color: rgb(7, 162, 228);
+border: none;
+color: white;
+font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.SwitchAccount{
+  margin-top: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SwitchAccount span{
+  color: rgb(7, 162, 228);
+  cursor: pointer;
 }
